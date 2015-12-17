@@ -44,5 +44,10 @@ The extension associates with `.log` files and applies coloring to the following
 * Added coloring of **string constants** enclosed with single or double quotes.
 * Added new constants `null`, `true` and `false`, colored the same way as numeric constants.
 
+*** 0.5.9.1, 17 Dec 2015 ***
+
+* Added coloring to hex values
+* Added my specific log.1, log.2, log.3, log.4, log.5 extensions for rolling logs 
+* Date time coloring customized to my specific log requirements
 
 [sample]: https://raw.githubusercontent.com/emilast/vscode-logfile-highlighter/master/content/sample.png

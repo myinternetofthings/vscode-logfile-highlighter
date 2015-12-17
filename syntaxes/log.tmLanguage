@@ -8,6 +8,11 @@
 		<key>fileTypes</key>
 		<array>
 			<string>log</string>
+			<string>log.1</string>
+			<string>log.2</string>
+			<string>log.3</string>
+			<string>log.4</string>
+			<string>log.5</string>
 		</array>
 
 		<key>name</key>
@@ -19,9 +24,8 @@
 			<!-- Log levels -->
 			<dict>
 				<key>match</key>
-				<string>\b(DEBUG)\b</string>
+				<string>\b(DEBUG|TRACE)\b</string>
 				<key>name</key>
-
 				<string>debug-token</string>
 			</dict>
 			<dict>
@@ -39,7 +43,7 @@
 			</dict>
 			<dict>
 				<key>match</key>
-				<string>\b(ERROR|FAILURE|FAIL)\b</string>
+				<string>\b(ERROR|FAILURE|FAIL|FATAL)\b</string>
 				<key>name</key>
 				<string>error-token</string>
 			</dict>
@@ -51,11 +55,37 @@
 				<key>name</key>
 				<string>comment</string>
 			</dict>
+			<dict>
+				<key>match</key>
+				<string>\d{2}:\d{2}(:\d{2}([\.,]\d{3})?)?</string>
+				<key>name</key>
+				<string>comment</string>
+			</dict>
 
+			<!-- Numbers -->
+			<dict>
+				<key>match</key>
+				<string>\b(0?[xX][0-9a-fA-F]+)\b</string>
+				<key>name</key>
+				<string>number.hex</string>
+			</dict>
+			<dict>
+				<key>match</key>
+				<string>\b([0-9a-fA-F]{2})\b</string>
+				<key>name</key>
+				<string>number</string>
+			</dict>
+			<dict>
+				<key>match</key>
+				<string>\b([0-9]+)\b</string>
+				<key>name</key>
+				<string>number</string>
+			</dict>
+			
 			<!-- Constants -->
 			<dict>
 				<key>match</key>
-				<string>\b([0-9]+|true|false|null)\b</string>
+				<string>\b(true|false|null|TRUE|FALSE|NULL)\b</string>
 				<key>name</key>
 				<string>constant</string>
 			</dict>
@@ -93,10 +123,10 @@
 				<!-- <string>keyword</string> -->
 				<string>identifier.method</string>
 			</dict>
-
+			
 		</array>
 		
 		<key>uuid</key>
-		<string>E81BB6AB-CAC7-4C27-9A79-4137A4693EBD</string>
+		<string>376f0c9e-a4a5-11e5-bf7f-feff819cdc9f</string>
 	</dict>
 </plist>
