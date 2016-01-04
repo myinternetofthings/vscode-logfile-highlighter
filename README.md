@@ -37,17 +37,31 @@ The extension associates with `.log` files and applies coloring to the following
 
 
 
-** Change log **
+## Change log
 
-*** 0.5.9, 15 Dec 2015 ***
+### 0.5.11-custom.1, 04 Jan 2016
 
-* Added coloring of **string constants** enclosed with single or double quotes.
-* Added new constants `null`, `true` and `false`, colored the same way as numeric constants.
+* Version changed to SemVer compatible
+* Merged with master changes from emilast
 
-*** 0.5.9.1, 17 Dec 2015 ***
+### 0.5.11, 29 Dec 2015
+
+* A recent VS Code update caused exception call stacks to be uncolored for some reason. Changed so that they use the same color as the exception name.
+
+### 0.5.10, 16 Dec 2015
+
+* Fixed bug that dates were colored the same way as constants.
+
+### 0.5.9.1, 17 Dec 2015
 
 * Added coloring to hex values
 * Added my specific log.1, log.2, log.3, log.4, log.5 extensions for rolling logs 
 * Date time coloring customized to my specific log requirements
+
+### 0.5.9, 15 Dec 2015
+
+* Added coloring of **string constants** enclosed with single or double quotes.
+* Added new constants `null`, `true` and `false`, colored the same way as numeric constants.
+
 
 [sample]: https://raw.githubusercontent.com/emilast/vscode-logfile-highlighter/master/content/sample.png
